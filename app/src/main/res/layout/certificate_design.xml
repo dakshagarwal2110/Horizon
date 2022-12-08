@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlid"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white">
+
+
+
+
+        <TextView
+            android:id="@+id/xxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif"
+            android:text="Certificate of participation"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/xxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xxx"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif"
+            android:text="event name"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="This certifies that"
+            android:textColor="#323030"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/xxxx"
+            android:textStyle="bold"
+            android:id="@+id/name_cesr"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/name_cer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_cesr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="daksh agarwal"
+            android:textColor="#323030"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_cer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:text="Horizon is the annual tech fest , technical skills are evaluated during this event through a variety of technical events organised by various Devfolio sponsors."
+            android:textColor="#323030"
+            android:textSize="18sp" />
+
+
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_download"
+            app:tint="@color/black"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/name_c"
+            android:id="@+id/download_certificate"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

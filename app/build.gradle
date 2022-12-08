@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.collegemeet.android.revafest'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.collegemeet.android.revafest"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-firestore:24.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation platform('com.google.firebase:firebase-bom:31.0.2')
+
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.github.bumptech.glide:annotations:4.12.0'
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.11.0"
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.android.support:multidex:2.0.1'
+    implementation 'com.anthonycr.grant:permissions:1.0'
+    implementation 'com.karumi:dexter:6.2.1'
+    //for firebase recycler
+    implementation 'com.firebaseui:firebase-ui-database:4.3.2'
+
+    //To post Editorial...
+    implementation "androidx.work:work-runtime:2.7.1"
+
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.2.4'
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.22'
+
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8+'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //for song player exoplayer dependency
+
+    implementation 'com.google.android.gms:play-services-location:21.0.0'
+
+
+
+
+
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'com.razorpay:checkout:1.6.24'
+}

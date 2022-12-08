@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scroll_profile_post_view"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:id="@+id/question_feed_image_name_linear_layoutp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/post_feed_user_profile_image_gridp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/man"
+                app:civ_border_color="#EDBE3A"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/post_feed_single_name_gridp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="9dp"
+
+                android:layout_toStartOf="@+id/delete_post_profile_user"
+                android:layout_toEndOf="@+id/post_feed_user_profile_image_gridp"
+                android:text="User"
+                android:textColor="#EDBE3A"
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:id="@+id/report_post_profile_searched"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/man"
+                android:visibility="invisible"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/delete_post_profile_user"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="7dp"
+                android:layout_toStartOf="@+id/report_post_profile_searched"
+                android:src="@drawable/ic_user_black"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/post_single_card_view_gridp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/black"
+            android:elevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_feed_single_id_gridp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/report_post_profile_searched_icon"
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_centerInParent="true"
+                    android:elevation="12dp"
+                    android:src="@drawable/report"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/date_post_feed_gridp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/black"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/caption_post_feed_gridp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/black"
+            android:text=""
+            android:textColor="#EDBE3A"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="9dp">
+
+            <ImageView
+                android:id="@+id/liked_post_feed_gridp"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_unliked" />
+
+            <TextView
+                android:id="@+id/post_likes_count_feedap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/liked_post_feed_gridp"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

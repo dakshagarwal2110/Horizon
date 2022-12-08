@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".RegisterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="19dp">
+
+            <ImageView
+                android:id="@+id/event_image_reg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/mightym" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/event_name_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/lola"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="7dp"
+            android:text="Event Name"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/inviteTeamMembers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_name_reg"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="19dp"
+            android:backgroundTint="@color/white"
+            android:text="Invite team members"
+            android:visibility="gone"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:id="@+id/card_team_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inviteTeamMembers"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:elevation="12dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userne_TextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+
+                android:background="@color/black"
+                android:backgroundTint="@color/black"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#ff69"
+                app:boxStrokeWidth="3dp"
+                app:hintTextColor="#2D45CD">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/z1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Horizon-ID 1"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userne_TextInputyout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+
+                android:background="@color/black"
+                android:backgroundTint="@color/black"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#ff69"
+                app:boxStrokeWidth="3dp"
+                app:hintTextColor="#2D45CD">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/z2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Horizon-ID 2"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sds"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+
+                android:background="@color/black"
+                android:backgroundTint="@color/black"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#ff69"
+                app:boxStrokeWidth="3dp"
+                app:hintTextColor="#2D45CD">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/z3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Horizon-ID 3"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userne_TextInputayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+
+                android:background="@color/black"
+                android:backgroundTint="@color/black"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomEnd="12dp"
+                app:boxCornerRadiusBottomStart="12dp"
+                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopStart="12dp"
+                app:boxStrokeColor="#ff69"
+                app:boxStrokeWidth="3dp"
+                app:hintTextColor="#2D45CD">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/z4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Horizon-ID 4"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/RegisterpaidInvite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_description"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="19dp"
+                android:backgroundTint="@color/white"
+                android:text="PAY AND INVITE"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/RegisterfreeInvite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_description"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="19dp"
+                android:backgroundTint="@color/white"
+                android:text="INVITE AND REGISTER"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/Register_indivisually_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_team_invite"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="19dp"
+            android:backgroundTint="@color/white"
+            android:text="PAY AND REGISTER"
+            android:visibility="gone"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Register_indivisually_free"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Register_indivisually_pay"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="19dp"
+            android:backgroundTint="@color/white"
+            android:text="REGISTER"
+            android:visibility="gone"
+            android:textColor="@color/black" />
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

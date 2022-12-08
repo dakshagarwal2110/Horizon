@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AllEventFragment">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="All events"
+        android:textColor="#facf5a"
+        android:textSize="26sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:background="@color/black"
+        tools:context=".AllEventFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/tomTesla"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_design5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_design5"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    tools:ignore="RtlSymmetry">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="19dp">
+
+                            <ImageView
+                                android:id="@+id/a1"
+                                android:layout_width="97dp"
+                                android:layout_height="97dp"
+                                android:src="@drawable/tomorowt" />
+                        </androidx.cardview.widget.CardView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tomTeslaN"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="Tomorrow's Tesla"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="12dp"
+                        android:elevation="12dp"
+
+                        android:src="@drawable/ic_fav_icon"
+                        android:visibility="visible"
+                        app:tint="@color/white" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="So all the extraordinary minds with magnificent ideas, we are here with a wonderful platform where you can showcase your creative imagination with your technical knowledge.
+
+The flexibility of presenting ideas in both software as well as hardware domains makes it even more approachable.
+
+And to participate, you only need the Zeal-ID. Register now!!"
+                        android:textColor="#F8F5F5"
+                        android:id="@+id/tomTeslaD"
+
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/migMan"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_designs" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_designs"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    tools:ignore="RtlSymmetry">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="19dp">
+
+                            <ImageView
+                                android:id="@+id/a2"
+                                android:layout_width="97dp"
+                                android:layout_height="97dp"
+                                android:src="@drawable/mightym" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="Mighty Manoeuvre"
+                            android:id="@+id/migManN"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:background="@drawable/backgroung_chat_input"
+                            android:src="@drawable/ic_plus"
+                            android:layout_marginBottom="7dp"
+
+                            android:visibility="gone"
+                            android:layout_marginStart="12dp"
+                            app:tint="@color/white"/>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="12dp"
+                        android:elevation="12dp"
+
+                        android:src="@drawable/ic_fav_icon"
+                        android:visibility="visible"
+                        app:tint="@color/white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/migManD"
+
+                        android:text="jssquanta As per Goldberg said-'We are fascinated with robots because they are reflections of ourselves' How easy is it for you to walk along and follow a line that
+
+is painted on the ground?\nSimple,right?\nBut how could a robot do that?\nSo fasten your seat belts and buckle up because the time has arrived for technophiles to show their passion for
+
+robots.\nGet ready as we introduce you with a very electrifying event of Zealicon '22 Mighty
+
+Manoeuvre\nAll you have to do is build a line following robot and
+
+compete with other teams to win exciting cash prizes. And you can participate in the even with just your ZEAL ID\n"
+                        android:textColor="#F8F5F5"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/treasureq"
+
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_design2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_design2"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    tools:ignore="RtlSymmetry">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="19dp">
+
+                            <ImageView
+                                android:id="@+id/a3"
+                                android:layout_width="97dp"
+                                android:layout_height="97dp"
+                                android:src="@drawable/treasureq" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="TREASUREQ"
+                            android:id="@+id/treasureqN"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:background="@drawable/backgroung_chat_input"
+                            android:src="@drawable/ic_plus"
+                            android:layout_marginBottom="7dp"
+
+                            android:layout_marginStart="12dp"
+                            android:visibility="gone"
+                            app:tint="@color/white"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+
+                        android:id="@+id/treasureqD"
+                        android:text="Know your campus? Let's find out! Get ready to go on an adventure with our online treasure hunt and find out how well you know your college. Register and solve the clues to become a part of this fun and exciting escapade."
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/cahoot"
+
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_design3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_design3"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+
+                    android:paddingEnd="12dp"
+                    android:paddingTop="12dp"
+                    tools:ignore="RtlSymmetry">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="19dp">
+
+                            <ImageView
+                                android:id="@+id/a4"
+                                android:layout_width="97dp"
+                                android:layout_height="97dp"
+                                android:src="@drawable/cahoot" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="CAHOOT"
+                            android:id="@+id/cahootN"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:background="@drawable/backgroung_chat_input"
+                            android:src="@drawable/ic_plus"
+                            android:layout_marginBottom="7dp"
+                            android:visibility="gone"
+                            android:layout_marginStart="12dp"
+                            app:tint="@color/white"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:visibility="gone"
+                        android:id="@+id/cahootD"
+                        android:text="CAHOOT 'Friends are like walls sometimes you lean on them and sometimes it's good knowing they're there.' But it's time to let them know and tag them to show your friendship to the world.
+
+CAHOOT an exciting event hosted by MICROSOFT MOBILE INNOVATION LAB in which you have to use your imagination and write creative and humorous comments to the unusual questions hosted on our facebook page. This event will start on 5/8/2019 7pm and end at 7/8/2019 8pm. There will be cool and exciting prizes and a chance to be on Microsoft team. The prizes will be distributed on 8/8/2019 at our orientation program. We will be posting questions on our facebook"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/terrainTraker"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_design4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_design4"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+
+                    tools:ignore="RtlSymmetry">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="19dp">
+
+                            <ImageView
+                                android:id="@+id/a5"
+                                android:layout_width="97dp"
+                                android:layout_height="97dp"
+                                android:src="@drawable/terrain" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="Terrain Tracker"
+                            android:textColor="@color/white"
+                            android:id="@+id/terrainTrakerN"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:background="@drawable/backgroung_chat_input"
+                            android:src="@drawable/ic_plus"
+                            android:layout_marginBottom="7dp"
+                            android:visibility="gone"
+                            android:layout_marginStart="12dp"
+                            app:tint="@color/white"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:visibility="gone"
+                        android:id="@+id/terrainTrakerD"
+                        android:text="Who doesn't likes finding treasures, don't we all love solving riddles? The official society of Civil Department, ACE brings you the event 'Terrain Tracker' at Zealicon. So gear up yourself and get ready to find hidden objects or places by following series of clues
+
+Do register yourself for this fun &amp; strategic event either through scanning the QR or by the link provided in highlights or by the link provided in bio!!"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/smackdown"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_design5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_design5"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    tools:ignore="RtlSymmetry">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="19dp">
+
+                            <ImageView
+                                android:id="@+id/a6"
+                                android:layout_width="97dp"
+                                android:layout_height="97dp"
+                                android:src="@drawable/smackdown" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="SMACKDOWN"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            android:id="@+id/smackdownN"
+                            android:textStyle="bold" />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:background="@drawable/backgroung_chat_input"
+                            android:src="@drawable/ic_plus"
+                            android:layout_marginBottom="7dp"
+                            android:visibility="gone"
+                            android:layout_marginStart="12dp"
+                            app:tint="@color/white"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/smackdownD"
+                        android:text="Presenting the most fun and strategically organised event of ACE the only official society of Civil Department which requires both physical and mental fitness at Zealicon - 'SMACKDOWN'
+
+A interesting event of construction and destruction. Uniform cardboard bricks used for constructing; while a rubber ball used for destructing. So much fun awaits your way! Sooo why wait??
+
+Do register yourself for this euphoric event either through scanning the QR or by the link provided in highlights of events or by the link provided in bio!!"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/robosoccer"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_designs" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_designs"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+
+                    tools:ignore="RtlSymmetry">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="19dp">
+
+                            <ImageView
+                                android:id="@+id/a7"
+                                android:layout_width="97dp"
+                                android:layout_height="97dp"
+                                android:src="@drawable/robosoccer" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="ROBOSOCCER"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            android:id="@+id/robosoccerN"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:background="@drawable/backgroung_chat_input"
+                            android:src="@drawable/ic_plus"
+                            android:layout_marginBottom="7dp"
+                            android:visibility="gone"
+                            android:layout_marginStart="12dp"
+                            app:tint="@color/white"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/robosoccerD"
+                        android:text="JSSATEN Hola sporties Who doesn't like soccer?
+
+Well, for all the lovers of Soccer, 'SPADE' brings the perfect combination of technical + sporty event 'Robo Soccer'
+
+Where, mini robos aim for the goal and those with a higher number of goals, wins.
+
+So prepare yourself for the mini robos and get in the arena for this fun techno-sporty game.
+
+Note: On spot registration
+
+Team-Size: 3 members per team
+
+Prize: Rs. 5000/- (total prize)
+
+Date: 27 April,2022
+
+Time: 11 AM Onwards."
+                        android:textColor="@color/white"
+
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/robowar"
+
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_design2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_design2"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+
+                    tools:ignore="RtlSymmetry">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="19dp">
+
+                            <ImageView
+                                android:id="@+id/a8"
+                                android:layout_width="97dp"
+                                android:layout_height="97dp"
+                                android:src="@drawable/robowar" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="ROBOWARS"
+                            android:id="@+id/robowarN"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:background="@drawable/backgroung_chat_input"
+                            android:src="@drawable/ic_plus"
+                            android:layout_marginBottom="7dp"
+                            android:visibility="gone"
+                            android:layout_marginStart="12dp"
+                            app:tint="@color/white"/>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="12dp"
+                        android:elevation="12dp"
+
+                        android:src="@drawable/ic_fav_icon"
+                        android:visibility="visible"
+                        app:tint="@color/white" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/robowarD"
+                        android:visibility="gone"
+                        android:text="BAMMM!!!! Two metallic painted chariots brandishing spinning gears ram into each other with a thud. Wheels fly off, hitting the Bulletproof window shield; metal armor is torn open, setting off a shower of sparks. No blood is shed, but this battle offers plenty of carnage.
+
+This is no scene from 'Real Steel.' We present you
+
+ROBOWARS the biggest event of our technical fest i.e Zealicon 2k22 where one bot will stand against all odds and will take the title home. Registration are live now!To register,check the link in our Bio!"
+                        android:textColor="@color/white"
+
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+
+                android:id="@+id/xcellerado"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_design3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_design3"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    tools:ignore="RtlSymmetry">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="19dp">
+
+                            <ImageView
+                                android:id="@+id/a9"
+                                android:layout_width="97dp"
+                                android:layout_height="97dp"
+                                android:src="@drawable/xeralado" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="XCELLARADO"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            android:id="@+id/xcelleradoN"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_vertical|end"
+
+                            android:background="@drawable/backgroung_chat_input"
+                            android:src="@drawable/ic_plus"
+                            android:layout_marginBottom="7dp"
+                            android:visibility="gone"
+                            android:layout_marginStart="12dp"
+                            app:tint="@color/white"/>
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="12dp"
+                        android:elevation="12dp"
+
+                        android:src="@drawable/ic_fav_icon"
+                        android:visibility="visible"
+                        app:tint="@color/white" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/xcelleradoD"
+                        android:visibility="gone"
+                        android:text="Do you like to live your lives in the fast
+
+lane??
+
+This is a call to all the racers who are born to perform.
+
+SPADE is here to blow you away with our next event
+
+XCELLARADO.
+
+We are ready to go full throttle.
+
+Our bots are in mode overdrive and ready to zoom past everything in their way.
+
+Are you ready to make your rivals kiss your treadmarks?? We have only one motto BE FAST OR BE LAST. So buckle up and start your engines.
+
+See you at the finish line"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_design4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/card_design4"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    tools:ignore="RtlSymmetry">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="Likes"
+                        android:textColor="@color/white"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 Likes"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

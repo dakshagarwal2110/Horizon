@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipePostFeed"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/post_feed_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_centerHorizontal="true">
+
+
+                <TextView
+                    android:id="@+id/postFeedHeading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="20dp"
+
+                    android:fontFamily="cursive"
+                    android:text="@string/app_name"
+                    android:textColor="#CDC050"
+                    android:textSize="28sp"
+                    android:textStyle="italic|bold" />
+
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/story_feed_highlights_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="9dp"
+                android:visibility="gone"
+
+                android:layout_below="@+id/post_feed_heading"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/rounded_bottom_navigation_bar" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postFeedRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/story_feed_highlights_recycler_view"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/rounded_bottom_navigation_bar" />
+
+            <ProgressBar
+                android:id="@+id/post_feed_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+
+            <!--            <RelativeLayout-->
+            <!--                android:id="@+id/internet_not_available_post_feed"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerInParent="true"-->
+            <!--                android:visibility="gone">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/internet_image_post_feed"-->
+            <!--                    android:layout_width="115dp"-->
+            <!--                    android:layout_height="115dp"-->
+            <!--                    android:src="@drawable/internet_error" />-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/refresh_button_post_feed"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_below="@id/internet_image_post_feed"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:layout_marginTop="9dp"-->
+            <!--                    android:backgroundTint="#ff69"-->
+            <!--                    android:text="@string/refresh" />-->
+            <!--            </RelativeLayout>-->
+
+            <LinearLayout
+                android:id="@+id/no_post_feed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/post_feed_heading"
+                android:background="@color/black"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/x_audios"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="cursive"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:text="No post yet"
+                    android:textColor="@color/white"
+                    android:textSize="33sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="cursive"
+                    android:text="Why don't you start with one"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:textColor="#ff69"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

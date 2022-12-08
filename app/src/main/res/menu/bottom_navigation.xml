@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/MyEventsFrag"
+        android:icon="@drawable/ic_baseline_event_available_24"
+        android:title="My events"/>
+
+    <item
+        android:id="@+id/AllEventsFrag"
+        android:icon="@drawable/event"
+        android:title="All events"/>
+    <item
+        android:id="@+id/MemoriesFrag"
+        android:icon="@drawable/memories"
+        android:title="Memories"/>
+
+    <item
+        android:id="@+id/NotificationFrag"
+        android:icon="@drawable/ic_liked"
+        android:title="Notifications"/>
+
+    <item
+        android:id="@+id/ProfileFrag"
+        android:icon="@drawable/ic_user_black"
+        android:title="Profile"/>
+
+</menu>

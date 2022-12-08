@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PayActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay for event"
+        android:textColor="#71BF17"
+        android:textSize="30dp"
+        android:id="@+id/pay_price_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18sp"/>
+
+    <TextView
+        android:id="@+id/pay_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_price_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18sp"
+        android:text="₹1000"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/pay_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_price"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="19dp"
+        android:backgroundTint="@color/white"
+        android:text="PAY"
+        android:textColor="@color/black"
+        android:visibility="visible" />
+
+</RelativeLayout>
